@@ -1,0 +1,19 @@
+# Audio Fingerprinting System Configuration
+
+database:
+  path: 'audio_fingerprints.db'
+  max_connections: 10
+
+fingerprinting:
+  sample_rate: 16000
+  n_fft: 2048
+  hop_length: 512
+  max_peaks: 100
+
+matching:
+  threshold: 5.0
+  max_results: 10
+
+logging:
+  level: 'INFO'
+  file: 'audio_fingerprinting.log'
